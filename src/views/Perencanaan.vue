@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Perencanaan</h1>
+    <h3 class="text-center text-decoration-underline">Perencanaan</h3>
     <div class="card mt-4">
       <div class="card-body">
         <h5 class="card-title">Daftar Rencana Kegiatan</h5>

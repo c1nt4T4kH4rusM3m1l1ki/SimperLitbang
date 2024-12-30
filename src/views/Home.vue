@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="text-decoration-underline">Selamat Datang</h1>
-    <div class="row mt-4">
+    <h2 class="text-decoration-underline text-center">Selamat Datang</h2>
+    <div class="row mt-5">
       <div class="col-12 col-md-4 mb-4 text-center" v-for="data in dataCard" :key="data.judul">
         <div class="card">
           <div class="card-body">
@@ -18,12 +18,40 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const dataCard = ref([
+const dataCard = ref(
+  [
   {
-    judul:'Perencanaan',
-    deskripsi:'Target RPJMD, Sasaran, Tujuan, Renstra, Renja, RKA dan Lain sebagainya',
-    link:'/perencanaan',
+    judul: "PERENCANAAN",
+    deskripsi: "Target RPJMD, Sasaran, Tujuan, Renstra, Renja, RKA dan Lain sebagainya",
+    link: "/perencanaan"
+  },
+  {
+    judul: "KEPEGAWAIAN",
+    deskripsi: "Jumlah Pegawai, Struktur Organisasi, DUK dan Lain sebagainya",
+    link: "/kepegawaian"
+  },
+  {
+    judul: "PELAPORAN",
+    deskripsi: "LKPJ, Realisasi Fisik Keuangan, Evaluasi Renja, Magister Resiko, dan Lain sebagainya",
+    link: "/laporan"
+  },
+  {
+    judul: "KEGIATAN",
+    deskripsi: "Bentuk Kegiatan, progres, tindak lanjut kegiatan dan lain-lain",
+    link: "/kegiatan"
+  },
+  {
+    judul: "PERATURAN",
+    deskripsi: "Peraturan yang berkenaan dengan pelaksanaan kegiatan",
+    link: "/peraturan"
+  },
+  {
+    judul: "KEUANGAN",
+    deskripsi: "Pencairan dana dalam jangka waktu tertentu",
+    link: "/keuangan"
   }
-])
+]
+
+)
 
 </script>
