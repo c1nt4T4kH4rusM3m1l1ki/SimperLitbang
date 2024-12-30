@@ -7,6 +7,11 @@
   --bottom-nav-height: 60px;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .sidebar {
   width: var(--sidebar-width);
   height: 100vh;
